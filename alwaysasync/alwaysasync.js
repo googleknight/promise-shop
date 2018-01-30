@@ -3,12 +3,9 @@ function alwaysasync(callback) {
   const promise = new Promise(((resolve, reject) => {
     resolve('PROMISE VALUE');
   }));
-  promise.then((result => callback(result)));
-}
-
-function main(callback = console.log) {
-  callback('MAIN PROGRAM');
-  alwaysasync(callback);
+  let result = '';
+  promise.then((promiseValue) => { result += promiseValue; return callback(result); });
+  result += 'MAIN PROGRAM';
 }
 module.exports = alwaysasync;
 

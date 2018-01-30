@@ -3,7 +3,7 @@ const alwaysasync = require('./alwaysasync');
 describe('Chekcing the returned value ', () => {
   it('Checking the returned value', (done) => {
     function callback(data) {
-      expect(data).toBe('PROMISE VALUE');
+      expect(data).toBe('MAIN PROGRAMPROMISE VALUE');
       done();
     }
     alwaysasync(callback);
