@@ -1,0 +1,25 @@
+{
+  "name": "promise-shop",
+  "version": "1.0.0",
+  "description": "Solutions of promise-shop",
+  "main": "index.js",
+  "scripts": {
+    "test": " ./node_modules/.bin/jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/googleknight/promise-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/googleknight/promise-shop/issues"
+  },
+  "homepage": "https://github.com/googleknight/promise-shop#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.1.4"
+  }
+}
