@@ -1,7 +1,7 @@
 function alwaysThrows() {
   throw new Error('OH NOES');
 }
-function iterate(arg) {
+function iterate(arg = 0) {
   console.log(arg);
   return arg + 1;
 }
