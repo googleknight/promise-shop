@@ -8,6 +8,12 @@ describe('Testing iterate', () => {
     expect(importantrule.iterate(0)).toBe(1);
   });
 });
+describe('Testing alwaysThrows', () => {
+  it('It should return throw an error', () => {
+    expect(importantrule.alwaysThrows).toThrow();
+  });
+});
+
 describe('Testing chainedpromise  ', () => {
   it('The returned value is Promise ', () => {
     expect(importantrule.chainedPromises()).toBeInstanceOf(Promise);
